@@ -1,0 +1,13 @@
+<h>XMR-USDT</h>
+
+<p>
+    <p>
+    {{#each @model as |pairResultTestList|}}
+      <li>Pair Name:  {{pairResultTestList.pairName}}</li>
+      <li>Qty:  {{pairResultTestList.qty}}</li>
+      <li>Entry Price:  {{pairResultTestList.entryPrice}}</li>
+      <li>Close Price:  {{pairResultTestList.closePrice}}</li>
+      <p> </p>
+    {{/each}}
+  </p>
+</p>

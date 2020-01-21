@@ -7,4 +7,10 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('bnb-usdt');
+  this.route('btc-usdt');
+  this.route('eth-usdt');
+  this.route('iota-eth');
+  this.route('ltc-usdt');
+  this.route('xmr-usdt');
 });
