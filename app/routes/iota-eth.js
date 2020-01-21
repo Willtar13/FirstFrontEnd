@@ -4,7 +4,7 @@ export default class IotaEthRoute extends Route {
 
     async model () {
         
-        let response = await fetch('http://localhost:8080/api/accessTradeTracker/iotaeth').then(response => response.json());
+        let response = await fetch('http://localhost:8081/api/accessTradeTracker/iotaeth').then(response => response.json());
 
         return response;
     }
