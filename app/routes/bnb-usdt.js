@@ -4,7 +4,7 @@ export default class BnbUsdtRoute extends Route {
 
     async model () {
         
-        let response = await fetch('http://localhost:8081/api/accessTradeTracker/bnbusdt').then(response => response.json());
+        let response = await fetch('http://localhost:8081/api/accessTradeTrackerObject/bnbusdt').then(response => response.json());
 
         return response;
     }

@@ -15,4 +15,5 @@ Router.map(function() {
   this.route('xmr-usdt');
   this.route('iota-eth-full');
   this.route('results-totals');
+  this.route('zrx-eth-full');
 });
