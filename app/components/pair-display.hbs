@@ -1,0 +1,19 @@
+<h> PAIR NAME:  {{@model.pairName}} </h>
+
+<p> Total Profits:  ${{@model.totalProfits}} </p>
+<p> Number Of Winners:  {{@model.numberOfWinners}} </p>
+<p> Number Of Losers:  {{@model.numberOfLosers}} </p>
+<p> Total Buy Commissions:  ${{@model.buyCommissions}} </p>
+<p> Total Sell Commissions:  ${{@model.sellCommissions}} </p>
+
+<p>
+    <p>
+    {{#each @model.pairResultTestList as |pairResultTestList|}}
+      <li>Pair Name:  {{pairResultTestList.pairName}}</li>
+      <li>Qty:  {{pairResultTestList.qty}}</li>
+      <li>Entry Price:  {{pairResultTestList.entryPrice}}</li>
+      <li>Close Price:  {{pairResultTestList.closePrice}}</li>
+      <p> </p>
+    {{/each}}
+  </p>
+</p>

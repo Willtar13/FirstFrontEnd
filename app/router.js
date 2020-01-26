@@ -13,4 +13,6 @@ Router.map(function() {
   this.route('iota-eth');
   this.route('ltc-usdt');
   this.route('xmr-usdt');
+  this.route('iota-eth-full');
+  this.route('results-totals');
 });
