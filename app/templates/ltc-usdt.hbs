@@ -1,12 +1,28 @@
-<h>LTC-USDT</h>
+<h2>PAIR-NAME: {{@model.pairName}}</h2>
+
+<p> Total Profits:  ${{@model.totalProfits}} </p>
+<p> Number Of Winners:  {{@model.numberOfWinners}} </p>
+<p> Number Of Losers:  {{@model.numberOfLosers}} </p>
+<p> Total Buy Commissions:  ${{@model.buyCommissions}} </p>
+<p> Total Sell Commissions:  ${{@model.sellCommissions}} </p>
 
 <p>
     <p>
-    {{#each @model as |pairResultTestList|}}
+    {{#each @model.pairResultTestList as |pairResultTestList|}}
       <li>Pair Name:  {{pairResultTestList.pairName}}</li>
       <li>Qty:  {{pairResultTestList.qty}}</li>
+      <li>Entry Time Stamp:  {{pairResultTestList.entryTimeStamp}}</li>
       <li>Entry Price:  {{pairResultTestList.entryPrice}}</li>
+      <li>Entry Commission:  {{pairResultTestList.entryCommission}}</li>
+
+      <li>Close Time Stamp:  {{pairResultTestList.closetimeStamp}}</li>
       <li>Close Price:  {{pairResultTestList.closePrice}}</li>
+      <li>Exit Commission:  {{pairResultTestList.exitCommission}}</li>
+
+      <li>Trade Id:  {{pairResultTestList.tradeId}}</li>
+      <li>Signal Bar Price:  {{pairResultTestList.signalBarPrice}}</li>
+
+
       <p> </p>
     {{/each}}
   </p>
